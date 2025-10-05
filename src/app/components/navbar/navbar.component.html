@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid" style="display: flex; flex-direction: row;">
+    <div class="navbar-top">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarUnderlineExample"
+        aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- separar en otro componente user -->
+      <li class="nav-item profile-btn">
+        <a class="profile-link" href="#" title="Profile">
+          <!-- Inline SVG avatar as fallback so no external image is required -->
+          <svg class="avatar" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="36" height="36" rx="18" fill="#f472b6" />
+            <text x="50%" y="55%" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" alignment-baseline="middle">O</text>
+          </svg>
+        </a>
+      </li>
+    </div>
+  <!-- <a class="navbar-brand" href="#"><img src="/images/bootstrap-logo.svg" width="36" alt="Bootstrap logo" /></a> -->
+    <div class="collapse navbar-collapse" id="navbarUnderlineExample">
+      <ul class="navbar-nav navbar-nav-underline">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/expenses">Gastos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/shop-list">Shop List</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
